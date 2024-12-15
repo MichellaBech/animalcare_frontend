@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff373d;
+  padding: 10px;
+}
+
+.logo {
+  width: 40%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  flex-grow: 1;
+  width: 100%; 
+}
+
+.left-button {
+  margin-left: auto;
+}
+
+.sidebar {
+  background-color: #e8e8e8;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar .menu {
+  list-style-type: none;
+}
+
+.sidebar .menu li {
+  margin: 10px 0;
+}
+
+.sidebar .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none; /* Fjerner understregning */
+  color: black; /* Ændrer farven til sort */
+}
+
+a:hover {
+  color: blue; /* Skifter farve ved hover */
+}
+
+/* Login CSS */
+.login-form {
+  display: flex;
+  flex-direction: column; /* Læg elementer vertikalt */
+  align-items: center; /* Centrer horisontalt */
+}
+
+.login {
+  display: flex;
+  flex-direction: column; /* Læg elementer vertikalt */
+  align-items: center; /* Centrer horisontalt */
+}
+
+.login h2 {
+  margin-bottom: 20px; /* Giver afstand under overskriften */
+  color: #333; /* Mørk tekstfarve */
+}
+
+.login input {
+  width: 300px; /* Fast bredde */
+  padding: 10px; /* Polstring */
+  margin-bottom: 15px; /* Afstand mellem inputs */
+  border-radius: 5px; /* Bløde hjørner */
+  font-size: 16px; /* Størrelse på tekst */
+}
+
+.login button {
+  width: 320px; /* Lidt bredere end inputs */
+  padding: 10px; /* Polstring */
+  border-radius: 5px; /* Bløde hjørner */
+  cursor: pointer; /* Pege-ikon ved hover */
+  font-size: 16px;
+}
+
+.login button:hover {
+  background-color: #086972; 
+}
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--light-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid var(--neutral-color);
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--neutral-color); /* Skift baggrundsfarve for lige rækker */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Fremhæv række ved hover */
+}
+
+button.view-button {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button.view-button:hover {
+  background-color: var(--accent-color);
+}
