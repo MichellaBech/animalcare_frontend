@@ -24,7 +24,7 @@ const getUserRoles = () => {
 
   const fetchClinics = () => {
     const options = makeOptions("GET", true); // True betyder, at token tilføjes, hvis nødvendigt
-    return fetch("http://localhost:7070/api/veterinaryclinics", options)
+    return fetch(URL + "/veterinaryclinics", options)
       .then(handleHttpErrors);
   };
   
