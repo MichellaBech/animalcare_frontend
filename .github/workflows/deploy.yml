@@ -37,4 +37,4 @@ jobs:
           APP_NAME="animalcare"
           REMOTE_PATH="/home/jetty/deployment/site/$APP_NAME/"
 
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./build/ $SSH_USER@$DO_DROPLET_IP:$REMOTE_PATH
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./dist/ $SSH_USER@$DO_DROPLET_IP:$REMOTE_PATH
