@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import facade from "../util/apiFacade";
 
+//Admin component
 function AdminComponent() {
   const [userRoles, setUserRoles] = useState([]);
   const [loggedIn, setLoggedIn] = useState(false);
